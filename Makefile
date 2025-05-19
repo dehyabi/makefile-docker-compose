@@ -1,4 +1,3 @@
-cat Makefile 
 # ========== Configuration ==========
 ENV_FILE=.env
 DOCKER_COMPOSE=docker-compose
