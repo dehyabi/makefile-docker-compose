@@ -4,11 +4,6 @@ DOCKER_COMPOSE=docker-compose
 
 # ========== Commands ==========
 
-# Run local Flask app (without Docker)
-run-local:
-	@echo "Running app locally with Flask..."
-	@export $(shell cat $(ENV_FILE) | xargs) && gunicorn -w 4 -b 0.0.0.0:5000 app:app
-
 # Build images, clean start (without delete volume)
 docker-build:
 	@echo "Building containers..."
